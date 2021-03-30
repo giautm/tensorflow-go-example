@@ -2,9 +2,9 @@
 
 First, you need to build `tensorflow-go:dev` in local by run the following command:
 
-``sh
+```sh
 docker build -f ./.devcontainer/tensorflow-go.Dockerfile -t tensorflow-go:dev .
-``
+```
 
 Then, reopen project with Cmd + Shift + P > "Remote Container: Rebuild and Reopen in Container"
 
@@ -31,7 +31,7 @@ go: finding module for package google.golang.org/protobuf/reflect/protoreflect
 ```
 
 run `go run hello_tf.go` to check TensorFlow version
-```
+```sh
 vscode ➜ /workspaces/tensorflow-go-example $ go run hello_tf.go
 2021-03-30 21:57:00.320207: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
