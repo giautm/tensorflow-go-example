@@ -1,6 +1,8 @@
 # tensorflow-go-example
 
-First, you need to build `tensorflow-go:dev` in local by run the following command:
+## First run step
+
+You need to build `tensorflow-go:dev` in local by run the following command:
 
 ```sh
 docker build -f ./.devcontainer/tensorflow-go.Dockerfile -t tensorflow-go:dev .
@@ -8,17 +10,20 @@ docker build -f ./.devcontainer/tensorflow-go.Dockerfile -t tensorflow-go:dev .
 
 Then, reopen project with Cmd + Shift + P > "Remote Container: Rebuild and Reopen in Container"
 
-Init Go modules with `go mod init giautm.dev/awesome-go`.
+Extra steps for new project
+> Init Go modules with `go mod init giautm.dev/awesome-go`.
+>
+> In `go.mod` replace tensorflow with local version.
+>
+> ```
+> module giautm.dev/awesome-go
+> 
+> go 1.16
+> 
+> replace github.com/tensorflow/tensorflow => /go/src/github.com/tensorflow/tensorflow
+> ```
 
-In `go.mod` replace tensorflow with local version.
-
-```
-module giautm.dev/awesome-go
-
-go 1.16
-
-replace github.com/tensorflow/tensorflow => /go/src/github.com/tensorflow/tensorflow
-```
+## Testing workspace
 
 Run `go mod tidy` to test result
 
