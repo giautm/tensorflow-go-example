@@ -22,7 +22,7 @@ RUN git clone -q https://github.com/golang/protobuf && \
   go build -o /go/bin/protoc-gen-go ./protoc-gen-go && \
   rm -rf ./protobuf
 
-ENV TF_VERSION "2.4.0"
+ENV TF_VERSION "2.4.1"
 
 RUN curl -sfLo libtensorflow.tar.gz \
   "https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-linux-x86_64-${TF_VERSION}.tar.gz" && \

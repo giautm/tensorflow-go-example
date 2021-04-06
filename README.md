@@ -37,9 +37,9 @@ go: finding module for package google.golang.org/protobuf/reflect/protoreflect
 
 run `go run hello_tf.go` to check TensorFlow version
 ```sh
-vscode ➜ /workspaces/tensorflow-go-example $ go run hello_tf.go
-2021-03-30 21:57:00.320207: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+vscode ➜ /workspaces/tensorflow-go-example (master ✗) $ go run ./hello_tf.go 
+2021-04-06 22:31:15.568705: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2021-03-30 21:57:00.326598: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2400000000 Hz
-Hello from TensorFlow version 2.4.0
+2021-04-06 22:31:15.621638: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2400000000 Hz
+Hello from TensorFlow version 2.4.1
 ```
